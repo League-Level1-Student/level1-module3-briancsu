@@ -54,10 +54,12 @@ public class Canvas {
         gamePanel.repaint();
         frame.pack();
     }
-
+   
     public void addCircle(Circle circle) {
-        circles.add(circle);
-
+    	
+    	circles.add(circle);
+    	 System.out.println("circle radius = " + circle1.radius);
+ 	    System.out.println("circle color = " + circle1.color);
         // Must place after adding new circle
         // no size - 1 to number starting from 1
         final int num = circles.size();
